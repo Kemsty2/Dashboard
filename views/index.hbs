@@ -1,0 +1,56 @@
+<header class="site-header">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron-text">
+      <h4 class="text-primary">Bienvenue Sur L'Interface D'Administration de ASCEFCA</h4>
+      <small class="font-italic text-muted">Nutrition Pour Tous</small>
+    </div>
+  </div>
+
+  <div class="breadcrumb">
+    <ol class="breadcrumb-tree">
+      <li class="breadcrumb-item">
+        <a href="#">
+          <span class="zmdi zmdi-home mr-1"></span>
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="breadcrumb-item active"><a href="/">Dashboard</a></li>
+    </ol>
+  </div>
+</header>
+<div class="site-content">
+  <div class="demo-wrapper">    
+
+    <div class="bd-content">
+      <h3 id="chartjs-line" class="mb-4">Utilisateur Actif Par Jour</h3>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card p-3">
+            {{!-- <h5 class="mb-4">Line Example</h5> --}}
+            <canvas id="actif_user_jour" width="100%"></canvas>            
+          </div><!-- ./card -->
+        </div><!-- ./col -->
+      </div><!-- ./row -->
+
+      <h3 id="chartjs-bar" class="my-4">Utilisateur Actif Par Mois</h3>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card p-3">
+            {{!-- <h5 class="mb-4">Bar Example</h5> --}}
+            <canvas id="actif_user_mois" width="100%"></canvas>
+          </div><!-- ./card -->
+        </div><!-- ./col -->
+      </div><!-- ./row -->
+
+      <h3 id="chartjs-other" class="my-4">Autre Graphe</h3>
+      <div class="row">
+        <div class="col-lg-6 m-auto">
+          <div class="card p-3">
+            {{!-- <h5 class="mb-4">Pie Chart</h5> --}}
+            <canvas id="chartjs-pie" width="50%"></canvas>
+          </div><!-- ./card -->
+        </div><!-- ./col -->
+      </div><!-- ./row -->
+    </div>
+  </div>
+</div>

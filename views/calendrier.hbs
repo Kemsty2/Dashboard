@@ -1,0 +1,63 @@
+<header class="site-header">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron-text">
+      <h4 class="text-primary">Calendrier</h4>
+      <small class="font-italic text-muted">Nutrition Pour Tous</small>
+    </div>
+  </div>
+
+  <div class="breadcrumb">
+    <ol class="breadcrumb-tree">
+      <li class="breadcrumb-item">
+        <a href="#">
+          <span class="zmdi zmdi-home mr-1"></span>
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="breadcrumb-item active"><a href="/calendrier">Calendrier</a></li>      
+    </ol>    
+  </div>
+</header>
+
+<div class="site-content">
+  <div class="calendar-wrap">
+    <div class="calendar-panel">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="external-events-wrap">
+          <div id="external-events" class="external-events">
+            <div data-class="bg-primary" class="bg-primary external-event">My Event 1</div>
+            <div data-class="bg-success" class="bg-success external-event">My Event 2</div>
+            <div data-class="bg-warning" class="bg-warning external-event">My Event 3</div>
+            <div data-class="bg-danger" class="bg-danger external-event">My Event 4</div>
+          </div><!-- /.external-events -->
+
+          <hr class="mb-4">
+
+          <form action="#" class="new_event_cat_form" id="new_event_cat_form">
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" name="category_name" id="category_name" class="form-control" placeholder="event name">
+              </div><!-- /.col -->
+
+              <div class="col-md-3">
+                <select name="category_color" id="category_color" class="form-control">
+                  <option value="bg-primary" selected>Primary</option>
+                  <option value="bg-success">Success</option>
+                  <option value="bg-warning">Warning</option>
+                  <option value="bg-danger">Danger</option>
+                </select>
+              </div><!-- /.col -->
+
+              <div class="col-md-3">
+                <input id="new_event_cat_submit" type="submit" class="btn btn-success btn-block" value="Create New" />
+              </div><!-- /.col -->
+            </div><!-- /.row -->
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="fullcalendar"></div>
+</div>

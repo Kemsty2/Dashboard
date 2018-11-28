@@ -1,0 +1,252 @@
+<header class="site-header">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron-text">
+      <h4 class="text-primary">Details D'un Aliment</h4>
+      <small class="font-italic text-muted">Nutrition Pour Tous</small>
+    </div>
+    <div class="jumbotron-charts">
+      <div class="item">
+        <div class="mr-3">
+          <small class="d-block mb-1">Date Creation</small>
+          <strong>Mercredi, 02 Janvier 2018</strong>
+        </div>
+      </div>
+      <div class="item">
+        <div class="mr-3">
+          <small class="d-block mb-1">Date Mise à Jour</small>
+          <strong>Mercredi, 02 Janvier 2018</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="breadcrumb">
+    <ol class="breadcrumb-tree">
+      <li class="breadcrumb-item">
+        <a href="#">
+          <span class="zmdi zmdi-home mr-1"></span>
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="breadcrumb-item"><a href="/aliments">Aliments</a></li>
+      <li class="breadcrumb-item active"><a href="/aliment/idAliment">Nom Aliment</a></li>
+    </ol>
+    <ul class="breadcrumb-btns">
+      <li>
+        <button class="btn btn-sm btn-outline-danger">
+          <i class="fa fa-trash mr-1 text-danger"></i>
+          <span>Supprimer L'Aliment</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<div class="site-content">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-heading">
+            Information Générale Sur L'Aliment
+          </h6>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-header">
+                  <h6 class="card-heading">Français</h6>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="nom_aliment_francais">Nom Aliment</label>
+                        <input type="text" class="form-control" id="nom_aliment_francais" placeholder="Nom Aliment">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="unite_mesure_francais">Unité de Mesure</label>
+                        <input type="text" class="form-control" id="unite_mesure_francais" placeholder="Unité de Mesure">
+                      </div>
+                    </div>
+                    <div class="col-md-4 m-auto">
+                      <button class="btn btn-outline-secondary btn-block">
+                        <i class="fa fa-pencil mr-1 text-success"></i>
+                        <span>Modifier</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-header">
+                  <h6 class="card-heading">Anglais</h6>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="nom_aliment_anglais">Nom Aliment</label>
+                        <input type="text" class="form-control" id="nom_aliment_anglais" placeholder="Nom Aliment">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="unite_mesure_anglais">Unité de Mesure</label>
+                        <input type="text" class="form-control" id="unite_mesure_anglais" placeholder="Unité de Mesure">
+                      </div>
+                    </div>
+                    <div class="col-md-4 m-auto">
+                      <button class="btn btn-outline-secondary btn-block">
+                        <i class="fa fa-pencil mr-1 text-success"></i>
+                        <span>Modifier</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 m-auto">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-heading">
+            Information Générale Sur Son Groupe
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto">
+              <div class="form-group">
+                <label for="inputState">Group</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option value="1">Groupe 1 </option>
+                  <option value="2">Groupe 2</option>
+                  <option value="3">Groupe 3</option>
+                  <option value="4">Groupe 4</option>
+                  <option value="5">Groupe 5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-heading">
+            Information Génrale Sur Sa Ration
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto">
+              <table id="datatables-example-1" class="display" cellspacing="0" width="100%">
+                <thead>
+                  <tr class="text-center">
+                    <th>#</th>
+                    <th>Tranche D'Age</th>
+                    <th>KiloCal</th>
+                    <th>Gramme</th>
+                    <th>Quantité</th>
+                    <th>Url Photo</th>
+                    <th>Date Création</th>
+                    <th>Date Ajout</th>                  
+                  </tr>
+                </thead>
+                <tfoot>
+                  <tr class="text-center">
+                    <th>#</th>
+                    <th>Tranche D'Age</th>
+                    <th>KiloCal</th>
+                    <th>Gramme</th>
+                    <th>Quantité</th>
+                    <th>Url Photo</th>
+                    <th>Date Création</th>
+                    <th>Date Ajout</th>   
+                  </tr>
+                </tfoot>
+                <tbody>
+                  <tr class="text-center">
+                    <td>1</td>
+                    <td>18 - 21</td>
+                    <td>400 Kcal</td>
+                    <td>61 g</td>
+                    <td>61</td>
+                    <td><a href="https://www.photo.com/photo.jpg" target="_blank">https://www.photo.com/photo.jpg</a></td>
+                    <td>2011/04/25</td>
+                    <td>2011/04/25</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>1</td>
+                    <td>18 - 21</td>
+                    <td>400 Kcal</td>
+                    <td>61 g</td>
+                    <td>61</td>
+                    <td><a href="https://www.photo.com/photo.jpg" target="_blank">https://www.photo.com/photo.jpg</a></td>
+                    <td>2011/04/25</td>
+                    <td>2011/04/25</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>1</td>
+                    <td>18 - 21</td>
+                    <td>400 Kcal</td>
+                    <td>61 g</td>
+                    <td>61</td>
+                    <td><a href="https://www.photo.com/photo.jpg" target="_blank">https://www.photo.com/photo.jpg</a></td>
+                    <td>2011/04/25</td>
+                    <td>2011/04/25</td>
+                  </tr>                  
+                  <tr class="text-center">
+                    <td>1</td>
+                    <td>18 - 21</td>
+                    <td>400 Kcal</td>
+                    <td>61 g</td>
+                    <td>61</td>
+                    <td><a href="https://www.photo.com/photo.jpg" target="_blank">https://www.photo.com/photo.jpg</a></td>
+                    <td>2011/04/25</td>
+                    <td>2011/04/25</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>1</td>
+                    <td>18 - 21</td>
+                    <td>400 Kcal</td>
+                    <td>61 g</td>
+                    <td>61</td>
+                    <td><a href="https://www.photo.com/photo.jpg" target="_blank">https://www.photo.com/photo.jpg</a></td>
+                    <td>2011/04/25</td>
+                    <td>2011/04/25</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>1</td>
+                    <td>18 - 21</td>
+                    <td>400 Kcal</td>
+                    <td>61 g</td>
+                    <td>61</td>
+                    <td><a href="https://www.photo.com/photo.jpg" target="_blank">https://www.photo.com/photo.jpg</a></td>
+                    <td>2011/04/25</td>
+                    <td>2011/04/25</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
